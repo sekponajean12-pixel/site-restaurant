@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Le Palmier d'Or – Restaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="restaurant.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">Le Palmier d'Or</a>
+    <ul class="nav-liens">
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#specialites">Spécialités</a></li>
+      <li><a href="#reservation" class="nav-cta">Réserver</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="accueil">
+    <div class="hero-bg"></div>
+    <div class="hero-contenu">
+      <span class="hero-badge">✦ Restaurant Gastronomique ✦</span>
+      <h1>Une cuisine<br><em>d'exception</em></h1>
+      <p class="hero-desc">Saveurs authentiques, ingrédients frais du terroir, et une ambiance chaleureuse pour des moments inoubliables.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-or">Voir le Menu</a>
+        <a href="#reservation" class="btn-contour">Réserver une Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORAIRES BANDE -->
+  <div class="horaires-bande">
+    <div class="horaires-inner">
+      <div class="horaire-bloc">
+        <h4>Déjeuner</h4>
+        <p>Lun – Ven<br>12h00 – 14h30</p>
+      </div>
+      <div class="horaire-bloc">
+        <h4>Dîner</h4>
+        <p>Mar – Sam<br>19h00 – 22h30</p>
+      </div>
+      <div class="horaire-bloc">
+        <h4>Brunch</h4>
+        <p>Samedi & Dimanche<br>10h00 – 13h00</p>
+      </div>
+      <div class="horaire-bloc">
+        <h4>Contact</h4>
+        <p>📞 +228 00 00 00 00<br>📍 Lomé, Togo</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- À PROPOS -->
+  <section class="apropos" id="apropos">
+    <div class="apropos-grid">
+      <div class="apropos-visuel">
+        <div class="apropos-img-cadre"></div>
+        <div class="apropos-decoratif"></div>
+      </div>
+      <div class="apropos-texte">
+        <span class="section-badge">Notre Histoire</span>
+        <h2>L'art de recevoir<br><em>à la togolaise</em></h2>
+        <p>Depuis 2010, Le Palmier d'Or vous accueille dans un cadre raffiné au cœur de Lomé. Notre chef, passionné de gastronomie africaine et internationale, sélectionne chaque jour les meilleurs produits du marché local.</p>
+        <p>Chaque plat est une invitation au voyage, mêlant les saveurs authentiques du Togo aux techniques de cuisine moderne. Ici, manger est une célébration.</p>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-nombre">14+</span>
+            <span class="stat-label">Ans d'expérience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-nombre">48</span>
+            <span class="stat-label">Plats signature</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-nombre">★ 4.9</span>
+            <span class="stat-label">Avis clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="section-titre">
+      <span class="section-badge">Notre Carte</span>
+      <h2>Menu du Moment</h2>
+      <p>Des créations saisonnières qui changent chaque mois, selon les meilleurs produits disponibles.</p>
+    </div>
+
+    <div class="menu-onglets">
+      <button class="onglet actif" onclick="changerOnglet(this, 'entrees')">Entrées</button>
+      <button class="onglet" onclick="changerOnglet(this, 'plats')">Plats</button>
+      <button class="onglet" onclick="changerOnglet(this, 'desserts')">Desserts</button>
+      <button class="onglet" onclick="changerOnglet(this, 'boissons')">Boissons</button>
+    </div>
+
+    <!-- ENTRÉES -->
+    <div class="menu-grille" id="entrees">
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Salade de Papaye Verte</h3>
+          <p>Papaye râpée, tomates cerises, cacahuètes grillées, vinaigrette gingembre-citron vert</p>
+        </div>
+        <span class="plat-prix">2 500 F</span>
+      </div>
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Velouté d'Igname</h3>
+          <p>Crème d'igname, huile de palme rouge, herbes fraîches du jardin</p>
+        </div>
+        <span class="plat-prix">3 000 F</span>
+      </div>
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Beignets de Crevettes</h3>
+          <p>Crevettes fraîches en tempura léger, sauce pimentée maison, zeste de lime</p>
+        </div>
+        <span class="plat-prix">4 500 F</span>
+      </div>
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Foie de Poulet Poêlé</h3>
+          <p>Foie de poulet, oignons caramélisés, tomates confites, pain grillé maison</p>
+        </div>
+        <span class="plat-prix">3 500 F</span>
+      </div>
+    </div>
+
+    <!-- PLATS -->
+    <div class="menu-grille" id="plats" style="display:none;">
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Poulet DG</h3>
+          <p>Poulet fermier, plantains mûrs frits, légumes sautés au wok, sauce tomate épicée</p>
+        </div>
+        <span class="plat-prix">7 500 F</span>
+      </div>
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Tilapia Braisé du Fleuve</h3>
+          <p>Tilapia entier grillé au charbon de bois, sauce gombo, riz parfumé</p>
+        </div>
+        <span class="plat-prix">8 000 F</span>
+      </div>
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Côtes d'Agneau Tandoori</h3>
+          <p>Agneau mariné 24h, épices douces, couscous aux herbes, yaourt menthe</p>
+        </div>
+        <span class="plat-prix">12 000 F</span>
+      </div>
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Riz Jollof Signature</h3>
+          <p>Riz cuit dans un bouillon de tomates fumées, légumes du marché, plantain braisé</p>
+        </div>
+        <span class="plat-prix">5 500 F</span>
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu-grille" id="desserts" style="display:none;">
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Fondant à la Noix de Coco</h3>
+          <p>Cœur fondant, glace gingembre-vanille, coulis de mangue fraîche</p>
+        </div>
+        <span class="plat-prix">3 000 F</span>
+      </div>
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Salade de Fruits Tropicaux</h3>
+          <p>Mangue, ananas, papaye, fruit de la passion, sirop de basilic</p>
+        </div>
+        <span class="plat-prix">2 500 F</span>
+      </div>
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Cake au Sésame et Miel</h3>
+          <p>Gâteau moelleux au sésame noir, miel d'acacia, crème Chantilly légère</p>
+        </div>
+        <span class="plat-prix">2 800 F</span>
+      </div>
+    </div>
+
+    <!-- BOISSONS -->
+    <div class="menu-grille" id="boissons" style="display:none;">
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Jus de Bissap Frais</h3>
+          <p>Fleurs d'hibiscus, gingembre, citron vert, menthe</p>
+        </div>
+        <span class="plat-prix">1 500 F</span>
+      </div>
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Cocktail Palmier d'Or</h3>
+          <p>Ananas, noix de coco, citron vert, gingembre, eau gazeuse</p>
+        </div>
+        <span class="plat-prix">2 500 F</span>
+      </div>
+      <div class="plat">
+        <div class="plat-info">
+          <h3>Eau de Coco Naturelle</h3>
+          <p>Coco frais de la région, servi glacé</p>
+        </div>
+        <span class="plat-prix">1 200 F</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPÉCIALITÉS -->
+  <section class="specialites" id="specialites">
+    <div class="section-titre">
+      <span class="section-badge">Ce qui nous définit</span>
+      <h2>Nos Engagements</h2>
+      <p>Chaque détail compte pour vous offrir une expérience mémorable.</p>
+    </div>
+    <div class="specialites-grille">
+      <div class="carte-spec">
+        <span class="spec-emoji">🌿</span>
+        <h3>Produits Frais & Locaux</h3>
+        <p>Nous travaillons directement avec les producteurs locaux pour vous garantir des ingrédients de saison, frais chaque matin.</p>
+      </div>
+      <div class="carte-spec">
+        <span class="spec-emoji">👨‍🍳</span>
+        <h3>Chef Expérimenté</h3>
+        <p>Notre chef cumule 20 ans de passion culinaire entre Lomé, Paris et Abidjan. Chaque plat est une signature.</p>
+      </div>
+      <div class="carte-spec">
+        <span class="spec-emoji">🕯️</span>
+        <h3>Ambiance Raffinée</h3>
+        <p>Une salle intimiste décorée avec soin, idéale pour les dîners en amoureux, anniversaires ou repas d'affaires.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RÉSERVATION -->
+  <section class="reservation" id="reservation">
+    <div class="reservation-contenu">
+      <div class="section-titre">
+        <span class="section-badge">Réservation</span>
+        <h2>Réservez votre Table</h2>
+        <p>Pour garantir votre place, réservez à l'avance. Nous vous confirmons par téléphone dans les 24h.</p>
+      </div>
+      <div class="ligne-or"></div>
+      <div class="form-grille">
+        <div class="champ">
+          <label for="nom">Nom complet</label>
+          <input type="text" id="nom" placeholder="Jean Atchou"/>
+        </div>
+        <div class="champ">
+          <label for="tel">Téléphone</label>
+          <input type="tel" id="tel" placeholder="+228 90 00 00 00"/>
+        </div>
+        <div class="champ">
+          <label for="date">Date</label>
+          <input type="date" id="date"/>
+        </div>
+        <div class="champ">
+          <label for="heure">Heure</label>
+          <input type="time" id="heure"/>
+        </div>
+        <div class="champ">
+          <label for="couverts">Nombre de personnes</label>
+          <select id="couverts">
+            <option value="">Sélectionner</option>
+            <option>1 personne</option>
+            <option>2 personnes</option>
+            <option>3 – 4 personnes</option>
+            <option>5 – 6 personnes</option>
+            <option>7 personnes et plus</option>
+          </select>
+        </div>
+        <div class="champ">
+          <label for="occasion">Occasion spéciale</label>
+          <select id="occasion">
+            <option value="">Aucune</option>
+            <option>Anniversaire</option>
+            <option>Rendez-vous romantique</option>
+            <option>Repas d'affaires</option>
+            <option>Célébration familiale</option>
+          </select>
+        </div>
+        <div class="champ plein">
+          <label for="message">Message (optionnel)</label>
+          <textarea id="message" placeholder="Allergies, préférences, demandes particulières..."></textarea>
+        </div>
+      </div>
+      <div class="form-submit">
+        <button class="btn-or" onclick="soumettre()">Envoyer la Réservation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Le Palmier d'Or</div>
+    <div class="footer-sous">Restaurant Gastronomique • Lomé, Togo</div>
+    <nav class="footer-liens">
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#menu">Menu</a>
+      <a href="#specialites">Spécialités</a>
+      <a href="#reservation">Réservation</a>
+    </nav>
+    <p class="footer-copy">© 2024 Le Palmier d'Or — Tous droits réservés</p>
+  </footer>
+
+  <script>
+    function changerOnglet(btn, id) {
+      document.querySelectorAll('.onglet').forEach(o => o.classList.remove('actif'));
+      ['entrees','plats','desserts','boissons'].forEach(m => {
+        document.getElementById(m).style.display = 'none';
+      });
+      btn.classList.add('actif');
+      document.getElementById(id).style.display = 'grid';
+    }
+
+    function soumettre() {
+      const nom = document.getElementById('nom').value;
+      const tel = document.getElementById('tel').value;
+      const date = document.getElementById('date').value;
+      if (!nom || !tel || !date) {
+        alert('Veuillez remplir au minimum le nom, le téléphone et la date.');
+        return;
+      }
+      alert(`✅ Merci ${nom} ! Votre demande de réservation a bien été reçue. Nous vous contactons au ${tel} pour confirmer.`);
+    }
+  </script>
+
+</body>
+</html>

@@ -1,2 +1,2 @@
 # site-restaurant
-Un exemple de site pour le restaurant Palmier d'Or uniquement avec HTML et CSS
+Dans le cadre d'un défi que je me suis lançer, j'ai voulue un faire un site restaurant 

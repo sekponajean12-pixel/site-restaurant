@@ -24,7 +24,7 @@ body {
 }
 
 /* ===== NAVIGATION ===== */
-nav {
+.nav-principale {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
@@ -61,18 +61,18 @@ nav {
 
 .nav-liens a:hover { color: var(--or); }
 
-.nav-cta {
+.nav-liens .nav-cta {
   background: transparent;
   border: 1px solid var(--or);
-  color: var(--or) !important;
+  color: var(--or) ;
   padding: 0.5rem 1.3rem;
   border-radius: 0;
-  transition: background 0.3s, color 0.3s !important;
+  transition: background 0.3s, color 0.3s ;
 }
 
-.nav-cta:hover {
-  background: var(--or) !important;
-  color: var(--noir) !important;
+.nav-liens .nav-cta:hover {
+  background: var(--or) ;
+  color: var(--noir) ;
 }
 
 /* ===== HERO ===== */
